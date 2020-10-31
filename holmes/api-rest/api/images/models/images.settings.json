@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "images",
+  "info": {
+    "name": "images"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "path": {
+      "type": "text"
+    },
+    "propriety": {
+      "via": "images",
+      "model": "proprietys"
+    }
+  }
+}

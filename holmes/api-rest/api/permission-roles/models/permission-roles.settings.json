@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "permission_roles",
+  "info": {
+    "name": "permission roles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "permission_id": {
+      "type": "text"
+    },
+    "role": {
+      "model": "roles",
+      "via": "permission_roles"
+    },
+    "permission": {
+      "via": "permission_roles",
+      "model": "permissions"
+    }
+  }
+}

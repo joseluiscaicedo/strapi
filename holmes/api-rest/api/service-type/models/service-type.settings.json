@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_types",
+  "info": {
+    "name": "service_type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "rent": {
+      "type": "string"
+    },
+    "sell": {
+      "type": "string"
+    },
+    "propriety": {
+      "via": "service_types",
+      "model": "proprietys"
+    }
+  }
+}

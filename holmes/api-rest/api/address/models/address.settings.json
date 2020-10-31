@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "neighborhood": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "propriety": {
+      "via": "address",
+      "model": "proprietys"
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "Colombia",
+        "Mexico"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "propriety_types",
+  "info": {
+    "name": "propriety_type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "home": {
+      "type": "string"
+    },
+    "apartment": {
+      "type": "string"
+    },
+    "proprieties": {
+      "via": "propriety_type",
+      "collection": "proprietys"
+    }
+  }
+}

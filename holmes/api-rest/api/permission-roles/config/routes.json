@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/permission-roles",
+      "handler": "permission-roles.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/permission-roles/count",
+      "handler": "permission-roles.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/permission-roles/:id",
+      "handler": "permission-roles.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/permission-roles",
+      "handler": "permission-roles.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/permission-roles/:id",
+      "handler": "permission-roles.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/permission-roles/:id",
+      "handler": "permission-roles.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

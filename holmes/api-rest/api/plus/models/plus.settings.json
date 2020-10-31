@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pluses",
+  "info": {
+    "name": "plus"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "air": {
+      "type": "boolean"
+    },
+    "gym": {
+      "type": "boolean"
+    },
+    "terrace": {
+      "type": "boolean"
+    },
+    "balcon": {
+      "type": "boolean"
+    },
+    "elevator": {
+      "type": "boolean"
+    },
+    "game_room": {
+      "type": "boolean"
+    },
+    "green_zone": {
+      "type": "boolean"
+    },
+    "futbol_area": {
+      "type": "boolean"
+    },
+    "parking": {
+      "type": "boolean"
+    },
+    "security": {
+      "type": "boolean"
+    },
+    "common_saloon": {
+      "type": "boolean"
+    },
+    "wifi": {
+      "type": "boolean"
+    },
+    "proprieties": {
+      "via": "plus",
+      "collection": "proprietys"
+    }
+  }
+}

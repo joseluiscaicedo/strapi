@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/propriety-types",
+      "handler": "propriety-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/propriety-types/count",
+      "handler": "propriety-type.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/propriety-types/:id",
+      "handler": "propriety-type.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/propriety-types",
+      "handler": "propriety-type.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/propriety-types/:id",
+      "handler": "propriety-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/propriety-types/:id",
+      "handler": "propriety-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

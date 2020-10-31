@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proprietys",
+  "info": {
+    "name": "proprietys",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "bedrooms": {
+      "type": "integer"
+    },
+    "bathrooms": {
+      "type": "integer"
+    },
+    "kitchen": {
+      "type": "integer"
+    },
+    "dinner_room": {
+      "type": "integer"
+    },
+    "family_room": {
+      "type": "integer"
+    },
+    "levels": {
+      "type": "integer"
+    },
+    "area": {
+      "type": "decimal"
+    },
+    "stratum": {
+      "type": "integer"
+    },
+    "antiquity": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "user": {
+      "model": "users",
+      "via": "proprietys"
+    },
+    "service_types": {
+      "collection": "service-type",
+      "via": "propriety"
+    },
+    "propriety_type": {
+      "model": "propriety-type",
+      "via": "proprieties"
+    },
+    "images": {
+      "collection": "images",
+      "via": "propriety"
+    },
+    "address": {
+      "model": "address",
+      "via": "propriety"
+    },
+    "favorite": {
+      "model": "favorites",
+      "via": "propriety"
+    },
+    "plus": {
+      "model": "plus",
+      "via": "proprieties"
+    }
+  }
+}

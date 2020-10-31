@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users",
+  "info": {
+    "name": "users",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "avatar": {
+      "type": "text"
+    },
+    "create_at": {
+      "type": "date"
+    },
+    "update_at": {
+      "type": "date"
+    },
+    "users_id": {
+      "type": "biginteger"
+    },
+    "last_name": {
+      "type": "text"
+    },
+    "remembertoken": {
+      "type": "json"
+    },
+    "nick_name": {
+      "type": "text"
+    },
+    "role": {
+      "model": "roles",
+      "via": "users"
+    },
+    "proprietys": {
+      "via": "user",
+      "collection": "proprietys"
+    },
+    "favorites": {
+      "via": "users",
+      "collection": "favorites"
+    }
+  }
+}

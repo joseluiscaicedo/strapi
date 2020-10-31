@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proprietys",
+      "handler": "proprietys.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proprietys/count",
+      "handler": "proprietys.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proprietys/:id",
+      "handler": "proprietys.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proprietys",
+      "handler": "proprietys.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proprietys/:id",
+      "handler": "proprietys.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proprietys/:id",
+      "handler": "proprietys.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
